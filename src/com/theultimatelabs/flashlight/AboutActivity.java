@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2013 rob@theultimatelabs.com.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v3.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/gpl.html
+ * 
+ * Contributors:
+ *     rob@theultimatelabs.com - initial API and implementation
+ ******************************************************************************/
 package com.theultimatelabs.flashlight;
 
 import android.app.Activity;
@@ -34,9 +44,9 @@ public class AboutActivity extends Activity {
 				+ "The goal is to make your phone's LED quickly available when you need it, without using a GUI." +
 				"It's a flashlight, lantern and lamp." +
 				"It works so well it's replaced my nightstand lamp.</p>" +
-				"<p>This app is free and open source under the GPL. I write apps as a hobby, but I would like to do more." +
-				" Please consider <a href=\"http://blog.theultimatelabs.com/p/donate.html\">donating</a> if you like this app" +
-				" and want to see more open source apps. Thanks. -<a href=\"mailto:rob@theultimatelabs.com\">Rob</a>"
+				"<p>This app is free and open source under the GPL. I write apps as a hobby, but I would like to do more. " +
+				"Please consider <a href=\"http://blog.theultimatelabs.com/p/donate.html\">donating</a> if you like this app " +
+				"and want to see more open source apps. Thanks. -<a href=\"mailto:rob@theultimatelabs.com\">Rob</a>"
 				+ "<h2>Links</h2>"
 				+ "<p><a href=\"http://theultimatelabs.com\">Homepage</a></p>"
 				+ "<p><a href=\"https://play.google.com/store/apps/developer?id=theUltimateLabs\">Other Apps</a></p>"
@@ -53,10 +63,10 @@ public class AboutActivity extends Activity {
 				+ "<li>Lantern Mode: LED turns on when phone is placed face down and lockscreen is on</li>"
 				+ "<li>Lamp Mode: Same as lantern mode, except it never turns off when plugged in</li> +"
 				+ "</ul>"
-				+ "The LED will turn off after a period to prevent battery loss. This timeout starts at 10 minutes when being used as a lantern and 1 minute otherwise."
-				+ "The LED will flicker before turning off. Every time the phone is moved the timers reset and more time is added."
+				+ "The LED will turn off after a period to prevent battery loss. This timeout starts at 10 minutes when being used as a lantern and 1 minute otherwise. "
+				+ "The LED will flicker before turning off. Every time the phone is moved the timers reset and more time is added. "
 				+ "Specifically, 1 minute is added to the lantern timeout and 5 seconds is added to the normal timeout. "
-				+ "i.e. if the phone is moved 5 times, the lantern timeout will now be 15 minutes. So shake your phone if you need more time."
+				+ "i.e. if the phone is moved 5 times, the lantern timeout will now be 15 minutes. So shake your phone if you need more time. "
 				+ "<h2>Support</h2>"
 				+ "Please comment on the blog or email me at <a href=\"mailto:rob@theultimatelabs.com\">rob@theultimatelabs.com</a>. Comments on on Google Play may go unnoticed.";
 
