@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <!--   <PreferenceCategory
+        android:key="flashlight_settings"
+        android:title="Flashlight" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="flashlight_enabled"
+            android:summary="Enable lockscreen flashlight"
+            android:title="Flashlight Mode Enable" /> -->
+            
+           <Preference android:title="About" >
+  			  <intent android:action="com.theultimatelabs.flashlight.AboutActivity"/>
+			</Preference>
+            
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="global_enabled"
+            android:title="Enable App" />
+        
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/on_delay_entries"
+            android:dependency="global_enabled"
+            android:entryValues="@array/on_delay_values"
+            android:key="on_delay"
+            android:summary="Delay between waking the phone up and the LED turning on"
+            android:title="LED On Delay" />
+    
+        
+    	<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="quickOn_enabled"
+            android:dependency="global_enabled"
+            android:summary="Quickly turning the screen off then back on will turn on the LED"
+            android:title="QuickOn Mode Enable" />
+    
+   <!--   </PreferenceCategory> -->
+    
+    
+    <!--  <PreferenceCategory
+        android:key="lantern_settings"
+        android:title="Lantern" >-->
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="lantern_enabled"
+            android:dependency="global_enabled"
+            android:summary="LED turns on when the lockscreen is on and the phone is placed facedown"
+            android:title="Lantern Mode Enable" />
+
+        <!--   <ListPreference
+            android:defaultValue="300"
+            android:dependency="lantern_enabled"
+            android:entries="@array/lantern_timeout_entries"
+            android:entryValues="@array/lantern_timeout_values"
+            android:key="lantern_timeout"
+            android:summary="How long should lantern stay on before automatically shutting off (movement resets the timer)"
+            android:title="Lantern Timeout" />-->
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="lamp_enabled"
+            android:dependency="global_enabled"
+            android:summary="Like a lantern, but never turns off when the phone is plugged in"
+            android:title="Lamp Mode" />
+
+     <!--  </PreferenceCategory> -->
+    <!--<PreferenceCategory
+        android:key="advanced_settings"
+        android:title="Advanced" >
+ 
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/luminosity_threshold_entries"
+            android:entryValues="@array/luminosity_threshold_values"
+            android:key="luminosity_threshold"
+            android:summary="Flashlight won&apos;t turn if it&apos;s bright"
+            android:title="Luminosity Threshold" /> -->
+       <!-- <ListPreference
+            android:defaultValue="60"
+            android:entries="@array/vibration_frequency_entries"
+            android:entryValues="@array/vibration_frequency_values"
+            android:key="vibration_frequency"
+            android:summary="Vibrate periodically when the LED is on just in case the flashlight was turned on accidently, like in your pocket"
+            android:title="Vibration Reminder Frequency" />
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/motionless_timeout_entries"
+            android:entryValues="@array/motionless_timeout_values"
+            android:key="motionless_timeout"
+            android:summary="Delay between stopping movement and flashlight turning off"
+            android:title="Motionless Timeout" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/motion_sensitivity_entries"
+            android:entryValues="@array/motion_sensitivity_values"
+            android:key="motion_senstivity"
+            android:summary="Lower sensitvity means more movement is required to keep flashlight on"
+            android:title="Motion Sensitivity" />
+    </PreferenceCategory> -->
+
+</PreferenceScreen>
